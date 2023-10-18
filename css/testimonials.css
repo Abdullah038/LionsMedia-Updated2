@@ -1,0 +1,120 @@
+/* stars */
+#testimonials .star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 50px;
+  position: relative; /* Moved from the generic .star-container */
+}
+
+#testimonials .star-container img {
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  display: block; /* Ensures there's no space below the image */
+}
+
+
+
+.section-padding {
+  padding: 80px 0;
+  background-color: black;
+  color: #EAEAEA;
+}
+
+.section-padding .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #EAEAEA;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.section-padding .section-borders span {
+  height: 2px;
+  background: #E57373;
+  width: 50px;
+  display: inline-block;
+}
+
+.section-padding .section-borders span.gray-border {
+  background: #616161;
+  width: 25px;
+  margin: 0 10px;
+}
+
+.section-padding .client-testimonial-carousel .owl-dots button {
+  height: 3px;
+  background: #616161;
+  width: 20px;
+  display: inline-block;
+  margin: 4px;
+  transition: .3s;
+}
+
+.section-padding .client-testimonial-carousel button.owl-dot.active {
+  background: #E57373;
+  width: 30px;
+}
+
+.section-padding .client-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-padding .single-testimonial-item {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  margin: 10px;
+  padding: 30px;
+  font-style: italic;
+  padding-left: 80px;
+  background-color: #1a1a1a;
+  color: #EAEAEA;
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.section-padding .single-testimonial-item:hover {
+  box-shadow: 0 0 15px #E57373; /* soft rose shadow on hover */
+  background-color: #2a2a2a;
+}
+
+.section-padding .single-testimonial-item:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 28px;
+  color: #E57373;
+  line-height: 35px;
+  margin-top: -17px;
+}
+
+.section-padding .single-testimonial-item:after {
+  background: #616161;
+  content: "";
+  height: 80%;
+  left: 70px;
+  position: absolute;
+  top: 10%;
+  width: 1px;
+}
+
+.section-padding .single-testimonial-item h3 {
+  font-size: 24px;
+  font-style: normal;
+  margin-bottom: 5px;
+  color: #E57373;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.section-padding .single-testimonial-item h3 span {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 4px;
+  color: #616161;
+}

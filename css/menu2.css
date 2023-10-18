@@ -1,0 +1,283 @@
+#menu {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+  #menu {
+      display: block;
+  }
+
+  .menu-icon .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #ffffff;
+      margin: 4px 0;
+      transition: 0.4s;
+
+  }
+
+  .menu-icon.menu-toggle .bar {
+      background-color: white;
+      /* Color of the "X" mark */
+  }
+
+  .mobile-menu {
+      background-color: #333;
+      position: fixed;
+      /* Change to fixed to position relative to the viewport */
+      width: 0%;
+      /* Initial state is closed, so width is 0 */
+      height: 100%;
+      /* Take up the entire height */
+      top: 0;
+      /* Start from the top of the screen */
+      right: 0;
+      /* Start from the right side of the screen */
+      overflow-x: hidden;
+      /* Ensure no horizontal scrollbars appear */
+      transition: 0.5s;
+      /* Transition for smooth opening/closing effect */
+      z-index: 999;
+      /* Positioned below the menu icon */
+      padding-top: 100px;
+
+  }
+
+  .mobile-menu a {
+      display: block;
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  .menu-open .mobile-menu {
+      width: 80%;
+      /* Width when menu is open */
+  }
+
+  .mobile-menu a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+
+  .menu-icon {
+      cursor: pointer;
+      position: absolute;
+      top: 46px;
+      right: 10px;
+      /* This will position it towards the right side of the screen with a 10px margin */
+      z-index: 1001;
+      /* This ensures that the icon is always on top of other content */
+  }
+
+  .menu-toggle .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-icon .bar {
+      width: 35px;
+      height: 4px;
+      background-color: #000000;
+      /* True black for the bars */
+      margin: 6px 0;
+      transition: 0.3s;
+      border-radius: 2px;
+  }
+
+  .menu-icon.menu-toggle .bar {
+      background-color: #ffffff;
+      /* Inverting to white for the "X" mark against a black menu */
+  }
+
+  .mobile-menu {
+      background-color: #000000;
+      /* True black for the slide-in menu */
+      position: fixed;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: 0.4s;
+      z-index: 1000;
+      padding-top: 82px;
+  }
+
+  .mobile-menu a {
+      display: block;
+      color: #ffffff;
+      /* White for contrast against the black menu */
+      padding: 25px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 400;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      /* Subtle dividers */
+      transition: background-color 0.3s;
+  }
+
+  .mobile-menu a:hover{
+    text-decoration: none;
+  }
+
+  .mobile-menu a:active {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu-open .mobile-menu {
+      width: 80%;
+  }
+
+  .menu-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      z-index: 1001;
+  }
+
+  .menu-toggle .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 8px);
+  }
+
+  .menu-toggle .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -8px);
+  }
+
+
+  .dropdown {
+      width: 100%;
+      /* Full width for the dropdown */
+  }
+
+  .arrow {
+      margin-left: 10px;
+      /* Spacing between "Services" text and arrow */
+      transition: 0.3s;
+      /* Smooth transition for the arrow rotation */
+  }
+
+  .dropdown-content {
+      display: none;
+      width: 100%;
+      /* Full width */
+  }
+
+  .dropdown-content a {
+      color: #ffffff;
+      padding: 15px 30px;
+      text-decoration: none;
+      display: block;
+      font-size: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .dropdown-content a:hover{
+    text-decoration: none;
+  }
+  .dropdown-content a:active {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .show {
+      display: block;
+  }
+
+  .arrow {
+      transition: 0.3s;
+  }
+
+  .arrow.down {
+      display: inline;
+  }
+
+  .arrow.up {
+      display: none;
+  }
+
+  .x-icon {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    cursor: pointer;
+}
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+}
+
+@media (max-width: 460px){
+  .menu-icon {
+    top: 23px;
+  }
+
+  .x-icon {
+    position: absolute;
+    top: 43px; /* Adjust as needed */
+    right: 20px;
+    cursor: pointer;
+}
+
+}
+
+.menu-icon.menu-toggle .bar {
+    background-color: white;
+}
+
+.menu-icon.menu-open .bars {
+    display: none;
+}
+
+.menu-icon.menu-open .x-icon {
+    display: block;
+}
+
+
+.x-bar {
+    width: 35px;
+    height: 4px;
+    background-color: #ffffff; /* White color for the "X" mark bars */
+    transition: 0.3s;
+}
+
+.x-bar1 {
+    transform: rotate(45deg);
+    position: relative;
+    left: 50%; /* Center the bars */
+    transform: translateX(-50%) rotate(45deg);
+    top: 2px;
+}
+
+.x-bar2 {
+    transform: rotate(-45deg);
+    position: relative;
+    left: 50%; /* Center the bars */
+    transform: translateX(-50%) rotate(-45deg);
+    top: -2px;
+}
+
+

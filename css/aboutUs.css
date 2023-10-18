@@ -1,0 +1,100 @@
+/* Existing styles for #full-aboutUs */
+#full-aboutUs {
+    background-image: url('css-images/aboutUs-back2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center; /* Ensure the background is centered */
+}
+@media only screen and (max-width: 500px) {
+    #full-aboutUs {
+        background-image: url('css-images/aboutUs-back\ -\ Copy.png');
+    }
+    #full-aboutUs{
+        transition: ease-in-out 1s;
+    }
+}
+
+#aboutUs {
+    overflow: visible; /* Remove scrollbar */
+    text-align: center;
+    position: relative; /* For positioning pseudo-elements relative to this section */
+    padding: 100px 0px 150px 0px;
+}    
+
+.centered-heading, .centered-paragraph {
+    text-align: center;
+    color: white;
+    z-index: 2; /* Ensure text is above the background image */
+    position: relative; /* To apply z-index */
+}    
+
+.centered-heading {
+    margin-bottom: 40px;
+}    
+
+.centered-paragraph {
+    margin: 30px 0;
+}    
+
+
+
+/* Media queries */
+@media (min-width: 1241px) {
+    #aboutUs {
+        --top-margin: 33vw;
+    }    
+}    
+
+@media (min-width: 1801px) {
+    #aboutUs {
+        --top-margin: 25vw;
+    }    
+}    
+
+@media (min-width: 2085px) {
+    #aboutUs {
+        --top-margin: 30vw;
+    }    
+}    
+
+@media (min-width: 2600px) {
+    #aboutUs {
+        --top-margin: 35vw;
+    }    
+}    
+@media (max-width: 768px){
+    #aboutUs {
+        padding-bottom: 0;
+    }    
+}
+/* Applying the CSS variable */
+
+
+#aboutUs {
+    margin-top: var(--top-margin, 0);
+}    
+
+
+#full-aboutUs {
+    position: relative;
+    /* Other styles... */
+}
+
+#full-aboutUs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 160px;  /* Adjust the height as necessary */
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);  /* Assuming the section's background color is white */
+}
+#full-aboutUs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 400px;  /* Adjust the height as necessary */
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);  /* Assuming the section's background color is white */
+}

@@ -1,0 +1,184 @@
+#slidingSides {
+    position: relative;
+  
+}
+#scrollSection {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    z-index: 1;
+    left: -25%;
+}
+
+:root {
+    --scroll-width: 2550px;
+    --scroll-height: 480px;
+    --scroll-items-displayed: 3;
+    --scroll-item-width: calc(var(--scroll-width) / var(--scroll-items-displayed));
+    --scroll-animation-duration: calc(var(--scroll-items) * 3s);
+}
+
+.scrollBox {
+    width: 100%;
+    height: var(--scroll-height);
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrollBox:before,
+.scrollBox:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: -1;
+  
+}
+
+.scrollItems {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: slideAnimation var(--scroll-animation-duration) linear infinite;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * var(--scroll-item-width) * var(--scroll-items)));
+    }
+}
+
+.scrollItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-height: 100%;
+    white-space: nowrap;
+    width: var(--scroll-item-width);
+    font-size: calc(3vh);
+}
+
+.scrollItems li img {
+    width: 1000px;
+    height: auto;
+    margin-right: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        width .3s linear,  /* add this line */
+        height 0.3s linear;  /* add this line */
+}
+
+.scrollItems li:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+#scrollingArea1,
+#scrollingArea2 {
+    margin-top: 2vh;
+    bottom: 10;
+    right: 10;
+    transform: rotate(-20deg);
+    overflow: hidden;
+    width: 100vw;
+    margin-left: 0;
+
+}
+#scrollingArea1,
+#scrollingArea2 {
+    width: 150%;
+    margin-left: 2vw;
+
+}
+
+
+
+.scrollBox:before,
+.scrollBox:after {
+    transform: rotate(45deg);
+}
+
+#video-section {
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 38));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    margin-top: 450px;
+    pointer-events: none;
+    
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+}
+
+@media (max-width: 1800px) {
+    #scrollSection {
+        margin-top: 350px;
+    }
+    .scrollItems li img {
+        width: 640px;
+        height: auto;
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease,
+            width 0.3s linear,
+            height 0.3s linear;
+    }
+    :root {
+        --scroll-height: 330px;
+        --scroll-items-displayed: 4;
+    }
+    #video-section{
+        margin-top: 380px;
+    }
+
+}
+
+@media (max-width: 1240px){
+    #scrollSection{
+        display: none;
+    }
+
+    #video-section {
+        position: relative;
+        margin-top: 350px;
+        
+    }
+
+    #carousel{
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px){
+    #video-section {
+        margin-top: 220px;
+        
+    }
+}

@@ -1,0 +1,185 @@
+#whyUs-grid-container {
+    color: #f5f5f5;
+    margin: 50px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas: 
+      "box1 box2 bigBox"
+      "box3 box4 bigBox";
+    align-items: center;
+    justify-items: center;
+    font-family: 'Arial', sans-serif; /* Added a simple and readable font */
+    max-width: 1200px; /* you can adjust this value as per your design needs */
+    margin: 50px auto 30px; 
+  }
+
+  .whyUs-grid-item {
+    background-color: #2b2b2b;
+    border: 1px solid #2b2b2b;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth hover effects */
+
+    width: 300px;
+    height: 400px;
+    text-align: center;
+
+    /* Flexbox properties for centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(25% - 30px); /* This will take into account the grid-gap. Adjust percentage as per your design. */
+    max-width: 300px;
+  }
+  
+  .whyUs-grid-item-side h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333; /* Darker text color for better readability */
+  }
+  
+  .whyUs-grid-item-side ul {
+    list-style: circle inside; /* Inside ensures the bullet points don't push content too far right */
+    margin-left: 20px; /* Gives space for bullet points */
+    font-size: 18px;
+  }
+  
+  .whyUs-grid-item-side ul li {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .whyUs-grid-item {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  /* Overlay gradient */
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), /* Slightly opaque black at the bottom */
+    url("images/gradiant-try.jpg");
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    
+}
+  
+  .whyUs-grid-item-side {
+    grid-area: bigBox;
+    text-align: center;
+
+  }
+  
+  
+  #box1 {
+    border-radius: 10px 0px 0px 0px;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  /* Overlay gradient */
+    url("images/red-whyus.png");
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+}
+
+  #box2{
+    border-radius: 0px 10px 0px 0px;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  /* Overlay gradient */
+    url("images/blue-whyus.png");
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+
+  }
+  #box3{
+    border-radius: 0px 0px 0px 10px;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  /* Overlay gradient */
+    url("images/frost-whyus.png");
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+
+  }
+  #box4{
+    border-radius: 0px 0px 10px 0px;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  /* Overlay gradient */
+    url("images/green-whyus.png");
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+  }
+  .button-85 {
+    color: #f5f5f5;
+    margin-top: 60px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #333; /* Slightly softer than pure black */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 110px;
+    transition: background-color 0.3s ease; /* Transition for button hover */
+  }
+  
+  .button-85:hover {
+    background-color: #222; /* Darken button on hover */
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 110px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 110px;
+  }

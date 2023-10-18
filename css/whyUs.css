@@ -1,0 +1,184 @@
+#whyUs-grid-container {
+  color: #f5f5f5;
+  margin: 50px 30px 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  grid-template-areas:
+    "box1 box2 bigBox"
+    "box3 box4 bigBox";
+  align-items: center;
+  justify-items: center;
+  font-family: "Arial", sans-serif; /* Added a simple and readable font */
+  max-width: 1200px; /* you can adjust this value as per your design needs */
+  margin: 50px auto 30px;
+}
+
+/* Mobile View: Default (For small devices) */
+#whyUs-grid-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+      "box1 box2"
+      "box3 box4"
+      "bigBox bigBox";
+  
+}
+/* Tablet View: Medium Devices (e.g., 768px and up) */
+@media (min-width: 768px) {
+  #whyUs-grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+          "box1 box2"
+          "box3 box4"
+          "bigBox bigBox";
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  #box1, #box2, #box3, #box4 {
+      transform-origin: center; /* Ensures the boxes scale from their center */
+      margin: 0; /* Remove any margins */
+      width: auto; /* Reset the width */
+      height: auto; /* Reset the height */
+
+  }
+
+  #whyUs-grid-container {
+      grid-gap: 2px; /* Further reduce the grid gap */
+  }
+
+  .whyUs-grid-item-side{
+    margin-top: 40px;
+  }
+}
+
+/* Adjustments for max-width of 1024px */
+@media (max-width: 1024px) {
+  #whyUs-grid-container {
+      max-width: 600px;
+      margin: 50px auto 30px;
+  }
+}
+
+/* Desktop View: Large Devices (e.g., 1025px and up) */
+@media (min-width: 1025px) {
+  #whyUs-grid-container {
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+          "box1 box2 bigBox"
+          "box3 box4 bigBox";
+  }
+}
+.whyUs-grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.whyUs-grid-item {
+  background-color: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Transition for smooth hover effects */
+
+  width: 300px;
+  height: 400px;
+  text-align: center;
+
+  /* Flexbox properties for centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(25% - 30px); /* This will take into account the grid-gap. Adjust percentage as per your design. */
+  max-width: 300px;
+}
+
+.whyUs-grid-item-side h1, 
+.whyUs-grid-item-side ul li {
+    text-align: center;
+}
+
+.whyUs-grid-item-side h1 {
+  margin-bottom: 50px;
+  font-size: 4rem;
+  color: #ffffff; /* Darker text color for better readability */
+}
+
+.whyUs-grid-item-side ul {
+  list-style: none;
+  margin-left: 20px; /* Gives space for bullet points */
+  font-size: 18px;
+}
+
+.whyUs-grid-item-side ul li {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.whyUs-grid-item {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    /* Overlay gradient */ linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)),
+    /* Slightly opaque black at the bottom */ url("images/gradiant-try.jpg");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+
+.whyUs-grid-item-side {
+  grid-area: bigBox;
+  text-align: center;
+}
+
+#box1 {
+  border-radius: 10px 0px 0px 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    /* Overlay gradient */ url("css-images/red-whyus.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+
+#box2 {
+  border-radius: 0px 10px 0px 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    /* Overlay gradient */ url("css-images/blue-whyus.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+#box3 {
+  border-radius: 0px 0px 0px 10px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    /* Overlay gradient */ url("css-images/frost-whyus.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+#box4 {
+  border-radius: 0px 0px 10px 0px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    /* Overlay gradient */ url("css-images/green-whyus.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+
+

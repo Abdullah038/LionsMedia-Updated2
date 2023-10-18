@@ -1,0 +1,109 @@
+#unmatched {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.excellence {
+    text-align: center;
+    padding: 120px 60px 60px 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
+    color: white;
+}
+
+
+.excellence h1, .excellence p {
+    background-position: 50% 0;
+    color: transparent;
+}
+
+.excellence h1 {
+    background: linear-gradient(135deg, white, white); /* #9400D3 is the color code for violet */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 45px;
+    font-size: 2.9rem;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.excellence p {
+    background: linear-gradient(135deg, white, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-left: 18%;
+    margin-right: 18%;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.more-link, .less-link {
+    display: none;
+}
+
+.short-description{
+    display:none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .more-link {
+        display: inline;
+    }
+
+    .less-link {
+        display: none; /* It should initially be hidden until "more..." is clicked */
+    }
+    .excellence {
+        padding: 0px 20px; /* Reduce padding for mobile */
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px); /* Adjust width for mobile */
+    }
+
+    .excellence h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-bottom: 25px; /* Adjust spacing */
+    }
+
+    .excellence p {
+        display: none;
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        line-height: 1.5;
+        margin-left: 10%; /* Reduce margins for text for mobile */
+        margin-right: 10%;
+
+    }
+    .excellence .short-description {
+        display: block;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; /* shows 3 full lines and half of the 4th line */
+        max-height: 4.5em; /* assuming line-height is 1em, adjust accordingly */
+    }
+
+    .excellence .more-link,
+    .excellence .less-link {
+        display: inline;
+        cursor: pointer;
+        color: whitesmoke;
+        text-decoration: underline;
+    }
+
+    .excellence .less-link {
+        display: none;
+    }
+    
+    /* If buttons or other elements need adjustment, add them here */
+}
+

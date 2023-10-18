@@ -1,0 +1,768 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url('css-images/65760.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* .responsive-bg {
+  max-width: 100vw;
+  height: 100vh;
+  position: absolute;
+  
+  
+  z-index: -1;  
+} */
+
+
+#blackback {
+  background:
+    /* Overlay gradient */
+    /* Slightly opaque black at the bottom */
+    url("css-images/Black_colour.jpg");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  min-height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+#heading-text::before {
+  content: "LionsMedia";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  font-size: 12vw;
+  opacity: 0.05;
+  margin-bottom: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-20deg);
+  pointer-events: none;
+  font-size: 15vw;
+}
+
+
+@media (max-width: 1800px) {
+  #heading-text::before {
+    margin-top: 520px;
+    font-size: 20vw;
+
+
+  }
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontally center */
+}
+
+
+.navbar .navbar-brand {
+
+  font-size: 2rem;
+  transition: padding-right 0.3s ease-out, font-size 0.3s ease-out;
+}
+
+#desktop-logo{
+  padding: 2px 10px 2px 0px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: black !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 1650px) {
+  .navbar .nav-link span {
+    transition: font-size 0.3s ease;
+    font-size: 1.5rem;
+  }
+
+  .navbar .nav-link span:hover {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .navbar .nav-link span {
+    transition: font-size 0.3s ease;
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-link span:hover {
+    font-size: 1.7rem;
+  }
+
+}
+
+.navbar .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.container .text-muted {
+  margin: 20px 0;
+  color: #6c757d;
+}
+
+.nav-item span {
+  transition: font-size 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.menu-item:hover>a>span {
+  font-size: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(1turn);
+  }
+}
+
+.logo-spin:hover {
+  animation: spin 3s infinite linear;
+}
+
+.logo {
+  height: 200px;
+  width: 180px;
+  transition: all 0.3s;
+}
+
+
+#heading-text {
+  margin-top: 4rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#heading-text h1 {
+  font-size: 4vw;
+}
+
+#heading-text h4 {
+  font-size: 2vw;
+}
+
+
+/* Hide the toggler by default */
+.navbar-toggler {
+  display: none;
+}
+
+
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none !important;
+  }
+}
+
+/* Override Bootstrap's default styles */
+.logo-container {
+  padding-left: 0;
+  margin-left: 0;
+  /* Remove left padding */
+}
+
+/* Ensure logo and text align to the left */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-spin {
+  transition: transform 0.3s ease;
+}
+#mobile-img{
+  display: none;
+}
+@media (max-width: 460px) {
+
+  #navbar-brand-text {
+    transform: scale(.75);
+    margin-left: 10px;
+  }
+  #desktop-img{
+    display: none;
+  }
+  #mobile-img{
+    display: block;
+  }
+  #nav-menu-button.open-main-nav{
+    top: 47px;
+  }
+}
+
+/* new strat*/
+/* ... Your existing styles ... */
+
+.menu ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu-item .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /* Center the dropdown */
+  transform: translateX(-50%) rotateX(-90deg);
+  /* Centering and initial rotation */
+  transform-origin: top;
+  transition: transform 0.3s linear;
+  width: auto;
+  /* Adjust this if you want a specific width */
+  white-space: nowrap;
+  /* Prevents the text from wrapping to the next line */
+
+}
+
+.menu-item:hover .sub-menu {
+  transform: translateX(-40%) rotateY(0deg);
+  /* Centering and hover rotation */
+}
+
+.menu-item a {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #151414;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.sub-menu a {
+  padding: .5em 1em;
+  transition: font-size 0.3s ease;
+  display: block;
+  /* Make the links appear as block elements */
+  width: 100%;
+  /* Take up the full width of the parent */
+}
+
+.sub-menu a:hover {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #151414;
+}
+
+ol.sub-menu {
+  background: rgba(255, 255, 255, 0.3); /* This creates a black background with 50% opacity */
+  padding: 10px; /* Adds some space around the text */
+  border-radius: 5px; /* Optional: Rounds the corners of the background box */
+}
+
+@media (min-width: 768px) {
+  .menu-item a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* end */
+
+
+/* footer */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+#socials {
+  border-bottom: 1px solid #373636;
+}
+
+#socials-div {
+  padding: 10px;
+}
+
+.footer-cta {
+  padding: 10px 0px;
+
+}
+
+.single-cta {
+  display: flex;
+  align-items: center;
+  /* Vertically center-align the child items */
+  justify-content: center;
+  cursor: pointer;
+}
+.single-cta:hover .cta-text h4,
+.single-cta:hover .cta-text span {
+    color: #E15A5A;
+    
+}
+
+#projects-footer {
+  justify-content: left;
+}
+
+.single-cta i {
+  color: #E15A5A;  /* Picking one color from the gradient */
+  font-size: 30px;
+  margin-top: 8px;
+}
+.contacts:hover{
+  text-decoration: none;
+}
+.cta-text {
+  padding-left: 15px;
+  /* display: inline-block; Removed this */
+
+
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-text {
+  text-align: center;
+  /* This will center-align the text inside the footer-text div */
+}
+
+
+.footer-logo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* Horizontal alignment */
+  align-items: center;
+  /* Vertical alignment */
+  flex-direction: column;
+  /* Stack child elements vertically */
+}
+
+.footer-logo img {
+  filter: invert(1);
+  display: block;
+  margin: auto;
+  /* Center the image horizontally */
+}
+
+.footer-logo:hover {
+  animation: spin 3s infinite linear;
+}
+
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background-color: #E15A5A;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.copyright-area {
+  padding: 5px 0;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.copyright-area a {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.copyright-area a:hover {
+  color: #52E19F;
+  text-decoration: none;
+}
+
+.copyright-text p {
+  margin: 0;
+}
+.instagram-gallery {
+  margin-top: 20px;
+}
+
+.ig-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ig-row a {
+  display: block;
+  width: 48%;
+}
+
+.ig-row img {
+  width: 100%;        /* will scale to the parent 'a' element width */
+  height: 100px;      /* or whatever height you want */
+  object-fit: cover;  /* to maintain the aspect ratio */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ig-row img:hover {
+  transform: scale(1.05);
+}
+
+
+.copyright-section {
+  background-color: #2a2a2a;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.copyright-section p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.copyright-symbol,
+.year,
+.separator,
+.brand-name,
+.rights-reserved,
+.additional-links {
+  margin: 0 5px;
+}
+
+.copyright-section a {
+  color: #E15A5A;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.copyright-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.separator {
+  opacity: 0.6;
+}
+
+.footer-form {
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  padding-left: 2.5rem !important;
+}
+
+.icon-input {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.icon-input>i {
+  position: absolute;
+  left: 15px;
+  top: calc(50% - 0.5em);
+  color: #aaa;
+}
+
+#message-icon {
+  top: 0.6rem;
+}
+
+#footer-btn {
+  margin-top: 10px;
+}
+
+#heading-text {
+  background-color: rgba(211, 211, 211, 0.1);
+  /* Semi-transparent gray color */
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Button Start */
+
+button {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: inherit;
+  color: #fff;
+  width: 9em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #FF7F7F, #FFE0A3, #5A5FCF, #FF7F7F);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  background-size: 300%;
+  border-radius: 35px !important;
+  z-index: 1;
+}
+
+button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #E15A5A, #E0B66E, #7871C0, #E15A5A);
+
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+/* Button End */
+
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#button-85-heading{
+  margin-top: 20px;
+}
+
+#aboutUs-button{
+  top: 40px;
+}
+
+#whyUs-button{
+  top: 40px;
+}
+
+#services-btn{
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  #contact-info .contact-text {
+    font-size: 12px; /* or whatever size you prefer */
+}
+  .logo {
+    height: 100px;
+    width: 90px;
+  }
+  #heading-text::before {
+    display: none;
+  }
+  #heading-text h1 {
+    font-size: 4vw;
+  }
+
+  #heading-text h4 {
+    font-size: 5vw;
+  }
+  #heading-text{
+    margin-top: 20px;
+  }
+ #button-85-heading{
+  margin-top: 20px;
+ } 
+ .footer-mobile{
+  display: none;
+ }
+
+
+ .row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  justify-content: space-between; /* Add some space between the items if there's extra room */
+}
+
+/* Let's set the columns to take 50% of the parent's width, minus some padding */
+.col-xl, .col-md {
+  flex: 0 0 calc(50% - 10px); /* 10px as an arbitrary value for spacing */
+  max-width: calc(50% - 10px);
+}
+
+.mb-30 {
+  margin-bottom: 30px; /* or whatever value you need */
+}
+
+#aboutUs-button{
+  margin-bottom: 50px;
+  top: 20px;
+}
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;  /* Adjust this value if needed. */
+  background-color: rgba(211, 211, 211, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;  
+}
+
+header, .navbar .navbar-brand, .navbar .nav-link {
+  /* ... your existing styles ... */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+.d-inline-block {
+  transition: filter 0.3s ease-in-out;  /* Transition for filter property */
+}

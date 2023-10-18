@@ -1,0 +1,403 @@
+body {
+  background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  /* Overlay gradient */
+      linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), /* Slightly opaque black at the bottom */
+      url("images/background.jpg");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  min-height: 100vh; 
+  margin: 0;
+  overflow: auto;
+}
+
+
+
+.navbar-brand img {
+    filter: invert(1);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+  }
+  
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 2.5rem;
+    transition: padding-right 0.3s ease-out, font-size 0.3s ease-out;
+}
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-size: 1.5rem;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
+@media (max-width: 1650px) {
+    .navbar .nav-link span {
+        transition: font-size 0.3s ease;
+        font-size: 1.5rem;
+    }
+    .navbar .nav-link span:hover {
+        font-size: 2rem;
+    }
+   
+}
+
+@media (max-width: 1200px) {
+  .navbar .nav-link span {
+      transition: font-size 0.3s ease;
+      font-size: 1.2rem;
+  }
+  .navbar .nav-link span:hover {
+      font-size: 1.7rem;
+  }
+ 
+}
+
+.navbar .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar .nav-link.active {
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+    color: #6c757d;
+}
+
+.nav-item span {
+    transition: font-size 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.nav-item span:hover {
+    font-size: 2rem;
+}
+
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(1turn); }
+}
+
+.logo-spin:hover {
+    animation: spin 3s infinite linear;
+}
+
+.logo {
+    height: 200px;
+    width: 180px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 100px;
+        width: 90px;
+    }
+    #heading-text h1 {
+        font-size: 24px;
+    }
+    #heading-text h4 {
+        font-size: 18px;
+    }
+}
+
+#heading-text {
+    color: aliceblue;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 10rem;
+}
+
+#heading-text h1 {
+    margin-top: 15rem;
+    margin-bottom: 20px;
+}
+
+/* Hide the toggler by default */
+.navbar-toggler {
+    display: none;
+}
+
+/* Show the toggler and adjust styles at 991px */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+
+}
+
+/* Video START*/
+#video-section {
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 38)); /* Gradient: Starts transparent and transitions to less blue */
+  padding: 50px 0; /* Some padding to give space around the video */
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+}
+
+.video-container {
+    width: 80%; /* Container will take up 80% of the viewport width */
+    display: flex;
+    justify-content: center; /* Center the video inside the container */
+    align-items: center; /* Center the video vertically inside the container */
+}
+
+.video-container video {
+    margin-top: 200px;
+    border-radius: 15px;
+    width: 100%; /* Video will take up the entire width of its container */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for a bit of depth */
+}
+
+
+/* 
+#video-section {
+    margin-top: 195px;
+    margin-bottom: 30px;
+} */
+/* Video END */
+
+/* footer */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+#socials {
+  border-bottom: 1px solid #373636;
+}
+#socials-div{
+  padding: 10px;
+}
+.single-cta {
+  display: flex;
+  align-items: center; /* Vertically center-align the child items */
+  justify-content: center;
+} 
+
+
+.single-cta i {
+  color: brown;
+  font-size: 30px;
+  /* float: left; Removed this */
+  margin-top: 8px; /* You might need to adjust this margin after centering */
+}
+
+.cta-text {
+  padding-left: 15px;
+  /* display: inline-block; Removed this */
+  
+
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-text {
+  text-align: center; /* This will center-align the text inside the footer-text div */
+}
+
+
+.footer-logo {
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;     /* Vertical alignment */
+  flex-direction: column;  /* Stack child elements vertically */
+}
+
+.footer-logo img {
+  filter: invert(1);
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.footer-logo:hover {
+  animation: spin 3s infinite linear;
+}
+
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background-color: #DD4B39;
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.copyright-area {
+  padding: 5px 0; 
+  background-color: #2a2a2a; 
+  color: #ffffff; 
+  font-family: 'Arial', sans-serif; 
+}
+
+.copyright-area a {
+  color: #ffffff; 
+  transition: color 0.3s; 
+}
+
+.copyright-area a:hover {
+  color: #52E19F; 
+  text-decoration: none; 
+}
+
+.copyright-text p {
+  margin: 0; 
+}
+
+.instagram-gallery {
+  margin-top: 20px;
+}
+
+.ig-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ig-row img {
+  width: 48%;  
+  border-radius: 5px;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ig-row img:hover {
+  transform: scale(1.05);
+}
+
+.copyright-section {
+  background-color: #2a2a2a;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.copyright-section p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.copyright-symbol, .year, .separator, .brand-name, .rights-reserved, .additional-links {
+  margin: 0 5px;
+}
+
+.copyright-section a {
+  color: #52E19F;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.copyright-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.separator {
+  opacity: 0.6;
+}
+.footer-form{
+  color: white;
+}
+.form-group{
+  margin-bottom: 10px;
+}

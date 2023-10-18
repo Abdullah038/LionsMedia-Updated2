@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="contact-css/styles.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <link rel="stylesheet" href="contact-css/page.css">
+  <link rel="stylesheet" href="css/softwareScrolling.css">
+
+  <script src="contact-script/script.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("BkWtxdbcEfKNb12an");
+    })();
+  </script>
+
+  <title>Contact</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+
+        <div class="align-items-center logo-container">
+          <a class="navbar-brand" href="index.html">
+            <div id="desktop-img"><img src="images/logo - Copy.PNG" alt="Lions Media Logo"
+                class="d-inline-block logo-spin" id="desktop-logo"><span id="navbar-brand-text">Lions
+                Media</span></div>
+            <div id="mobile-img"><img src="images/logo2.PNG" alt="Lions Media Logo"
+                class="d-inline-block logo-spin"><span id="navbar-brand-text">Lions
+                Media</span></div>
+          </a>
+        </div>
+        <div class=" d-flex align-items-center justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ol class="navbar-nav menu">
+              <li class="nav-item menu-item active">
+                <a class="nav-link" href="index.html"><span>Home</span></a>
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="services.html"><span>Services</span></a>
+
+                <ol class="sub-menu">
+                  <li class="dropdown-menu-item" id="top-dropdown"><a href="services.html#web-development">Web Dev</a>
+                  </li>
+                  <li class="dropdown-menu-item"><a href="services.html#social-media">Social Media</a></li>
+                  <li class="dropdown-menu-item"><a href="services.html#branding">Branding</a></li>
+                  <li class="dropdown-menu-item"><a href="services.html#content-creation">Content Creation</a></li>
+                </ol>
+
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="contact.html"><span>Contact</span></a>
+              </li>
+
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="portfolio.html"><span>Portfolio</span></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <section id="menu">
+      <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bars">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      </div>
+      
+      <div class="mobile-menu">
+          <div class="x-icon" onclick="toggleMenu()">
+              <div class="x-bar x-bar1"></div>
+              <div class="x-bar x-bar2"></div>
+          </div>
+  
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+              <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down">⮟</span>
+                  <span class="arrow up" style="display:none;">⮝</span>
+              </a>
+              <div class="dropdown-content">
+                  <a href="services.html#web-development">Web Development</a>
+                  <a href="services.html#social-media">Social Media</a>
+                  <a href="services.html#branding">Branding</a>
+                  <a href="services.html#content-creation">Content Creation</a>
+              </div>
+          </div>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+      </div>
+  </section>
+  </header>
+
+  <section id="main">
+
+    <div id="waterMark">
+      <h1>Contact us</h1>
+    </div>
+    
+
+    <section class="grid-container container">
+
+      <!-- Image Column -->
+      <div class="left-container">
+
+        
+        <h1 id="chatH1" class="fit-content-all">Let's chat.</h1>
+        <h1 class="fit-content-all">Tell me about your Project.</h1>
+
+        <p class="fit-content-all" >Let's create Something together.</p>
+
+        <section id="socials" class="socials-contact">
+          <div id="socials-div">
+            <ul>
+              <li>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-facebook-f"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/official.lionsmedia/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="tiktokLink">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-tiktok"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="form-container">
+        <h2>Send us a message</h2>
+
+          <div class="form-group icon-input">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" placeholder="Full Name" required/>
+          </div>
+
+          <div class="form-group icon-input">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email" required/>
+          </div>
+
+          <div class="form-group icon-input">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" id="phone" placeholder="Phone no." required>
+          </div>
+
+          <div class="form-group icon-input">
+            <i id="message2" class="fa-solid fa-comment-dots"></i>
+            <textarea class="form-control" id="message" placeholder="Ask us anything (Optional)" rows="6"
+              required></textarea>
+          </div>
+
+          <div class="center-button">
+            <button id="footer-btn" class="button-85" onclick="sendMail()">Submit</button>
+          </div>
+      
+      </div>
+    </section>
+
+  </section>
+
+ 
+
+  <footer class="footer-section">
+    <section id="contact-info" class="container">
+      <div class="footer-cta">
+        <div class="row">
+          <div class="col-xl col-md mb-30">
+            <div id="call-us" class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span class="contactUsF"><a href="tel:">(647) 914-1071</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl col-md mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>E-mail</h4>
+                <span class="contactUsF"><a href="mailto:Lions.media@hotmail.com">Lions.media@hotmail.com</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="softwareScrolling">
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li><i class="fab fa-html5"></i></li> <!-- HTML5 -->
+          <li><i class="fab fa-css3-alt"></i></li> <!-- CSS3 -->
+          <li><i class="fab fa-js-square"></i></li> <!-- JavaScript -->
+          <li><i class="fab fa-sass"></i></li> <!-- Sass -->
+          <li><i class="fab fa-react"></i></li> <!-- ReactJS -->
+          <li><i class="fab fa-vuejs"></i></li> <!-- VueJS -->
+          <li><i class="fab fa-angular"></i></li> <!-- AngularJS -->
+          <li><i class="fab fa-node-js"></i></li> <!-- NodeJS -->
+          <li><i class="fab fa-wordpress"></i></li> <!-- WordPress -->
+        </ul>
+      </div>
+
+
+    </section>
+
+
+    <div class="copyright-area">
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row align-items-center"> <!-- Retained the alignment -->
+            <div class="col-12 text-center"> <!-- Change the column class to span the whole width -->
+              <div class="copyright-text">
+                <div class="copyright-section">
+                  <p>
+                    <span class="copyright-symbol">&copy;</span>
+                    <span class="year">2023</span>
+                    <span class="separator">|</span>
+                    <span class="brand-name"><a href="your-website-link-here.com" target="_blank"
+                        rel="noopener noreferrer">Lions Media</a></span>
+                    <span class="rights-reserved">All Rights Reserved.</span>
+                    <span class="additional-links"><a href="terms.html" target="_blank">Terms & Conditions</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="script/menu.js"></script>
+  <script src="script/softwareScrolling.js"></script>
+</body>
+
+</html>
