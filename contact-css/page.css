@@ -30,6 +30,8 @@ body {
     width: fit-content;
 }
 
+
+
 #waterMark {
     position: absolute; /* Make the watermark positioned relative to the nearest positioned ancestor */
     top: 0; /* Start from the top of the parent container */
@@ -189,15 +191,28 @@ body {
         flex-direction: row;
         margin-top: 0;
         padding-right: 0;
+        gap: 0;
+        padding-left: 0;
     }
     .left-container{
         margin-top: 0rem;
+        padding-left: 10px;
     }
     .form-container input{
         width: 100%;
     }
     .form-container {
         width: fit-content;
+        padding-top: 10;
+    }
+    #contact-paragh{
+        margin: 0;
+    }
+    #social-icon{
+        margin-top: 0;
+    }
+    .form-container .center-button {
+        margin-top: 0; /* Add some space above the button */
     }
 }
 

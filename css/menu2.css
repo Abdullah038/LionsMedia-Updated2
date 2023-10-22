@@ -256,7 +256,9 @@ body.no-scroll {
     display: block;
 }
 
-
+#middle-bar{
+    background-color: #E15A5A !important;
+}
 .x-bar {
     width: 35px;
     height: 4px;
@@ -270,14 +272,17 @@ body.no-scroll {
     left: 50%; /* Center the bars */
     transform: translateX(-50%) rotate(45deg);
     top: 2px;
+    width: 37px;
 }
 
 .x-bar2 {
     transform: rotate(-45deg);
     position: relative;
     left: 50%; /* Center the bars */
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg) skew(-50deg) skewY(-3deg);
     top: -2px;
+    background-color: #E15A5A;
 }
-
-
+.sub-menu-text{
+    color: grey;
+}

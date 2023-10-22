@@ -75,3 +75,5 @@ carouselList.addEventListener('touchend', function (event) {
         resetInterval();
     }
 });
+
+

@@ -29,12 +29,10 @@ function toggleDropdown() {
         dropdownContent.style.display = "none";
         arrowDown.style.display = "inline";
         arrowUp.style.display = "none";
-        body.classList.remove('no-scroll');
     } else {
         dropdownContent.style.display = "block";
         arrowDown.style.display = "none";
         arrowUp.style.display = "inline";
-        body.classList.add('no-scroll');
     }
 }
 

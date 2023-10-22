@@ -30,14 +30,27 @@
 
 .centered-heading {
     margin-bottom: 40px;
-}    
-
+    font-size: 2.9rem;
+}
 .centered-paragraph {
     margin: 30px 0;
+    font-size: 1.5rem;
 }    
 
+@media (max-width: 500px){
+    .centered-heading{
+        font-size: 2rem;
+    }
+    .centered-paragraph{
+        font-size: 1rem;
+    }
+}
 
 
+.highlight {
+    color: #E15A5A;
+    font-weight: bold;
+  }
 /* Media queries */
 @media (min-width: 1241px) {
     #aboutUs {

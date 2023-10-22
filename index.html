@@ -41,15 +41,12 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
   <script src="script/mailing.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("BkWtxdbcEfKNb12an");
-      })();
-    </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("BkWtxdbcEfKNb12an");
+    })();
+  </script>
   <title>Lions Media</title>
 </head>
 
@@ -57,8 +54,9 @@
 
   <body>
     <div id="loadingScreen">
-      <div class="loader"></div>
-      <p>Loading...</p>
+      <h1 id="loading-h1">Lions Media</h1>
+      <img src="images/logo - Copy.PNG" alt="logo" class="loader">
+      <p id="loading-p">Loading...</p>
     </div>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -107,36 +105,36 @@
       </nav>
       <section id="menu">
         <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bars">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar" id="middle-bar"></div>
+            <div class="bar"></div>
+          </div>
         </div>
-        
+
         <div class="mobile-menu">
-            <div class="x-icon" onclick="toggleMenu()">
-                <div class="x-bar x-bar1"></div>
-                <div class="x-bar x-bar2"></div>
+          <div class="x-icon" onclick="toggleMenu()">
+            <div class="x-bar x-bar1"></div>
+            <div class="x-bar x-bar2"></div>
+          </div>
+
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down"><i class="fa-solid fa-arrow-down" style="color: #000000;"></i></span>
+              <span class="arrow up" style="display:none;"><i class="fa-solid fa-arrow-up" style="color: #000000;"></i></span>
+            </a>
+            <div class="dropdown-content">
+              <a href="services.html#web-development"><span class="sub-menu-text">Web Development</span></a>
+              <a href="services.html#social-media"><span class="sub-menu-text">Social Media</span></a>
+              <a href="services.html#branding"><span class="sub-menu-text">Branding</span></a>
+              <a href="services.html#content-creation"><span class="sub-menu-text">Content Creation</span></a>
             </div>
-    
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down">⮟</span>
-                    <span class="arrow up" style="display:none;">⮝</span>
-                </a>
-                <div class="dropdown-content">
-                    <a href="services.html#web-development">Web Development</a>
-                    <a href="services.html#social-media">Social Media</a>
-                    <a href="services.html#branding">Branding</a>
-                    <a href="services.html#content-creation">Content Creation</a>
-                </div>
-            </div>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+          </div>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
         </div>
-    </section>
-    
+      </section>
+
 
     </header>
 
@@ -208,12 +206,13 @@
       </div>
       <div id="video-section">
         <div class="video-container">
-          <video controls>
+          <video controls poster="images/404.png">
             <source src="images/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
+      
 
     </section>
 
@@ -221,32 +220,20 @@
 
       <section id="full-aboutUs">
         <div class="container">
-          <div id="aboutUs">
-            <h1 class="centered-heading">"Our Journey and Vision"</h1>
+          <div id="aboutUs" class="container">
+            <h1 class="centered-heading">
+              "Our <span class="highlight">Journey</span> and <span class="highlight">Vision</span>"
+            </h1>
 
             <p class="centered-paragraph" id="journey-paragraph">
-              🚀 Our Journey:<br>
-              Our journey began with a shared passion for design, creativity, and the boundless potential of the digital
-              world. As a team of dreamers, thinkers, and innovators, we set out to redefine the way businesses connect
-              with
-              their audience.
+              Committed to excellence in <span class="highlight">design</span> and <span
+                class="highlight">storytelling</span>, we transform how brands connect with audiences through <span
+                class="highlight">digital narratives</span>. Our <span class="highlight">data-driven</span> approach,
+              combined with strategic <span class="highlight">SEO</span> and <span class="highlight">social media
+                marketing</span>, ensures measurable <span class="highlight">success</span> and significant brand
+              elevation.
             </p>
 
-            <p class="centered-paragraph" id="storytelling-paragraph">
-              🎨 The Art of Digital Storytelling:<br>
-              Design is at the heart of everything we do. We believe that every pixel, every post, and every campaign
-              should
-              be a masterpiece. Our creative minds are fueled by the desire to craft authentic and engaging narratives
-              that
-              resonate with your audience.
-            </p>
-
-            <p class="centered-paragraph" id="results-paragraph">
-              📈 Driving Results:<br>
-              But we're not just about aesthetics. We're obsessed with results. Our data-driven approach ensures that
-              every
-              strategy, every click, and every conversion leads to tangible success for your brand.
-            </p>
             <a href="services.html"><button id="aboutUs-button" class="button-85">More info</button></a>
           </div>
         </div>
@@ -314,7 +301,7 @@
         </div>
         <div class="button-container">
           <a href="services.html">
-          <button id="services-btn" class="button-85">More info</button></a>
+            <button id="services-btn" class="button-85">More info</button></a>
         </div>
 
       </section>
@@ -360,11 +347,13 @@
 
       <section id="unmatched">
         <div class="excellence">
-          <h1>Unmatched Excellence: Why Our Results Reign Supreme in Digital Marketing</h1>
-          <p class="expandable-content">We outperform the competition through our innovative strategies and a proven
-            track
-            record of driving tangible results for businesses. Our dedication to understanding your unique needs and
-            leveraging cutting-edge tools ensures your brand's success in the digital landscape.</p>
+          <h1><span class="highlight">Unmatched Excellence</span>: Why Our <span class="highlight">Results</span> Reign Supreme in <span class="highlight">Digital Marketing</span></h1>
+          <p class="expandable-content">We surpass competitors with our <span class="highlight">innovative
+              strategies</span> and proven success in driving <span class="highlight">tangible results</span> for
+            businesses. Our commitment to grasping your <span class="highlight">unique needs</span>, coupled with our
+            utilization of <span class="highlight">cutting-edge tools</span>, guarantees your brand's triumph in the
+            <span class="highlight">digital landscape</span>.
+          </p>
           <div class="button-container">
             <a href="portfolio.html"><button id="services-btn" class="button-85">Projects</button></a>
           </div>
@@ -420,24 +409,24 @@
                   <div class="footer-widget-heading">
                     <h3>Get in Touch!</h3>
                   </div>
-                    <div class="form-group icon-input">
-                      <i class="fa-solid fa-user"></i>
-                      <input type="text" class="form-control" id="name" placeholder="Name" />
-                    </div>
 
-                    <div class="form-group icon-input">
-                      <i class="fa-solid fa-envelope"></i>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" />
-                    </div>
+                  <div class="form-group icon-input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="form-control" id="name" placeholder="Name" required />
+                  </div>
 
-                    <div class="form-group icon-input">
-                      <i id="message-icon" class="fa-solid fa-comment-dots"></i>
-                      <textarea class="form-control" id="message" rows="3"
-                        placeholder="How can we help you?"></textarea>
-                    </div>
-                    
-                    <button id="footer-btn" class="button-85" onclick="sendMail()">Contact an Expert</button>
-                  
+                  <div class="form-group icon-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required/>
+                  </div>
+
+                  <div class="form-group icon-input">
+                    <i id="message-icon" class="fa-solid fa-comment-dots"></i>
+                    <textarea class="form-control" id="message" rows="3" placeholder="How can we help you?" required></textarea>
+                  </div>
+
+                  <button id="footer-btn" class="button-85" onclick="sendMail()">Contact an Expert</button>
+                
                 </div>
               </div>
 
@@ -459,23 +448,23 @@
 
                   <div class="instagram-gallery">
                     <div class="ig-row">
-                        <a href="portfolio.html">
-                            <img src="portfolio-css/idrive-logo.PNG" alt="Instagram Image 1">
-                        </a>
-                        <a href="portfolio.html">
-                            <img src="portfolio-css/boutique.PNG" alt="Instagram Image 2">
-                        </a>
+                      <a href="portfolio.html">
+                        <img src="portfolio-css/idrive-logo.PNG" alt="Instagram Image 1">
+                      </a>
+                      <a href="portfolio.html">
+                        <img src="portfolio-css/boutique.PNG" alt="Instagram Image 2">
+                      </a>
                     </div>
                     <div class="ig-row">
-                        <a href="portfolio.html">
-                            <img src="portfolio-css/indo-pak.PNG" alt="Instagram Image 3">
-                        </a>
-                        <a href="portfolio.html">
-                            <img src="portfolio-css/paint.JPG" alt="Instagram Image 4">
-                        </a>
+                      <a href="portfolio.html">
+                        <img src="portfolio-css/indo-pak.PNG" alt="Instagram Image 3">
+                      </a>
+                      <a href="portfolio.html">
+                        <img src="portfolio-css/paint.JPG" alt="Instagram Image 4">
+                      </a>
                     </div>
-                </div>
-                
+                  </div>
+
 
                 </div>
               </div>
@@ -578,10 +567,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-
-
 
 
   </body>
