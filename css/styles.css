@@ -296,7 +296,7 @@ body {
 }
 
 ol.sub-menu {
-  background: rgba(255, 255, 255, 0.3); /* This creates a black background with 50% opacity */
+  background: rgba(183, 183, 183, .9); /* This creates a black background with 50% opacity */
   padding: 10px; /* Adds some space around the text */
   border-radius: 5px; /* Optional: Rounds the corners of the background box */
 }
@@ -307,7 +307,9 @@ ol.sub-menu {
   }
 }
 
-
+#arrowsup{
+  color: black !important;
+}
 
 
 /* end */
@@ -365,8 +367,6 @@ ul {
 .cta-text {
   padding-left: 15px;
   /* display: inline-block; Removed this */
-
-
 }
 
 .cta-text h4 {
@@ -699,9 +699,9 @@ body {
   margin-top: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #contact-info .contact-text {
-    font-size: 12px; /* or whatever size you prefer */
+    font-size: 11px; /* or whatever size you prefer */
 }
   .logo {
     height: 100px;
@@ -711,11 +711,11 @@ body {
     display: none;
   }
   #heading-text h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   #heading-text h4 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   #heading-text{
     margin-top: 20px;

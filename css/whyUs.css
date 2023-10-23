@@ -1,3 +1,6 @@
+#whyUs{
+  padding-bottom: 40px;
+}
 #whyUs-grid-container {
   color: #f5f5f5;
   margin: 50px 30px 30px 30px;
@@ -146,8 +149,8 @@
 #box1 {
   border-radius: 10px 0px 0px 0px;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    /* Overlay gradient */ url("css-images/red-whyus.png");
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .1)),
+    /* Overlay gradient */ url("css-images/red.png");
   background-size: cover, cover, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed;
@@ -157,7 +160,7 @@
   border-radius: 0px 10px 0px 0px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    /* Overlay gradient */ url("css-images/blue-whyus.png");
+    /* Overlay gradient */ url("css-images/bluewebs.png");
   background-size: cover, cover, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed;
@@ -166,7 +169,7 @@
   border-radius: 0px 0px 0px 10px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    /* Overlay gradient */ url("css-images/frost-whyus.png");
+    /* Overlay gradient */ url("css-images/frost.png");
   background-size: cover, cover, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed;
@@ -175,7 +178,7 @@
   border-radius: 0px 0px 10px 0px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    /* Overlay gradient */ url("css-images/green-whyus.png");
+    /* Overlay gradient */ url("css-images/succ.png");
   background-size: cover, cover, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed;

@@ -51,16 +51,20 @@
       padding: 14px 16px;
       text-decoration: none;
   }
+  .mobile-menu a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+.mobile-menu i:hover {
+    color: black;
+}
 
   .menu-open .mobile-menu {
       width: 80%;
       /* Width when menu is open */
   }
 
-  .mobile-menu a:hover {
-      background-color: #ddd;
-      color: black;
-  }
 
 
   .menu-icon {

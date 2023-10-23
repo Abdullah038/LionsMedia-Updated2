@@ -1,127 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 #services {
   background: url('css-images/65760.jpg');
   background-attachment: fixed;
   background-size: cover;
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  font-family: 'Roboto', sans-serif;  /* Added a web-safe font */
 }
 
 #services::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background-image: url('css-images/topGradient.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;  /* position above the content but below other potential overlay content */
-    pointer-events: none; /* ensures that the pseudo-element doesn't interfere with clicks */
-    opacity: .5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .5;
 }
 
-/* grid bottom start */
 .services-grid {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 30px;
-    max-width: 1200px;
-    margin: 60px auto 0; /* top margin set to 100px, bottom margin set to 0 */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
+.services-item {
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);  /* Adjusted background color */
+}
+
+.services-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.05);  /* Lightened the overlay */
+  z-index: 1;
+}
+
+.services-item h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  letter-spacing: 1px;  /* Added letter-spacing */
+  text-align: center;
+}
+
+.services-item p {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
+  z-index: 2;
+  letter-spacing: 0.5px;  /* Added letter-spacing */
+  text-align: center;  /* Justify the text */
+}
+
+.services-item:nth-child(1) {
+  background: linear-gradient(45deg, #6DD5FA, #28D2D1);
+}
+
+.services-item:nth-child(2) {
+  background: linear-gradient(45deg, #F7971E, #FFD200);
+}
+
+.services-item:nth-child(3) {
+  background: linear-gradient(45deg, #FF6B6B, #FFE57E);
+}
+
+.services-item:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: 0.9fr 1.2fr 0.9fr;
+  }
+}
+
+@media (max-width: 786px) {
+  #services {
+    padding-top: 0px !important;
+  }
+
+  #services img {
+    margin-top: 40px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.packages-heading {
+  text-align: center;
+  font-size: 3em;
+  color: hsl(0, 0%, 47%);
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 35px;
+  letter-spacing: 1px;
+}
+#services-btn-a{
+  padding-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .packages-heading {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .packages-heading {
+    font-size: 3em;
+  }
+}
+
+/* ... (previous CSS code) */
+
+.services-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Aligns items to the left */
+}
+
+.services-item li {
+  font-size: 1.1em;  /* Reduced font size for a cleaner look */
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;  /* For the pseudo-elements */
+  padding-left: 2em;  /* Added padding for aesthetics */
+}
+
+.services-item li::before {
+  content: '➔';  /* Unicode character for an arrow */
+  color: #464646;  /* Adjusted color for the arrow */
+  font-size: 1.5em;  /* Slightly larger font size for the arrow */
+  position: absolute;  /* Position it absolutely within the li */
+  left: 0;  /* Adjusted position to the left */
+  top: 0;  /* Adjusted vertical position */
+  line-height: 1.1em;  /* Adjusted line-height for vertical alignment */
+}
+
+/* ... (remaining CSS code) */
+
+
+#services-btn {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+#services-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  #services {
+    padding-top: 20px;
+  }
+
+  .services-item {
+    padding: 20px;
+    font-size: 1.2em;
+  }
+
+  .services-item h1,
+  .services-item p {
+    font-size: 1.2em;
+  }
+}
+
+
+/* ... (previous CSS code) */
+
+
+
+
+.drop-down-text {
+  display: block;}
+
+@media (max-width: 768px) {
+  .services-item h1 {
+    cursor: pointer;
+  }
   
   .services-item {
-    padding: 30px;  /* Increased padding for better spacing */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s;
-    position: relative;  /* For the overlay */
-    overflow: hidden;  /* Ensures the overlay stays within the box */
+    overflow: hidden;
+    max-height: 1000px; /* initially set to a high value to show all content */
+    transition: max-height 0.3s ease-in-out;
   }
   
-  /* Background Overlay */
-  .services-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);  /* Semi-transparent black overlay */
-    z-index: 1;
-  }
-  
-  .services-item h1 {
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-size: 2.5em;  /* Increased font size */
-    font-weight: 700;  /* Made it bolder */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Added text shadow for distinction */
-    z-index: 2;  /* Places text above the overlay */
-  
-  }
-  
-  .services-item p {
-    color: #ffffff;
-    font-size: 1.3em;  /* Increased font size for better readability */
-    font-weight: 500;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  /* Added text shadow for distinction */
-    line-height: 1.5;  /* Improved line height for readability */
-    z-index: 2;  /* Places text above the overlay */
-  }
-  
-  .services-item:nth-child(1) {
-    background: linear-gradient(45deg, #6DD5FA, #28D2D1);
-  }
-  
-  .services-item:nth-child(2) {
-    background: linear-gradient(45deg, #F7971E, #FFD200);
-  }
-  
-  .services-item:nth-child(3) {
-    background: linear-gradient(45deg, #FF6B6B, #FFE57E);
-  }
-  
-  /* Hover Effect */
-  .services-item:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Medium devices (tablets, less than 992px) */
-  @media (min-width: 600px) {
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  /* Large devices (desktops, less than 1200px) */
-  @media (min-width: 992px) {
-    .services-grid {
-        grid-template-columns: 0.9fr 1.2fr 0.9fr;
-    }
-  }
 
-  @media (max-width: 786px){
-    #services{
-      padding-top: 0px !important;
-    }
+.services-item {
+  cursor: pointer;
+  height: 100%;
+}
 
-    #services img{
-      margin-top: 40px;
-    }
+
+.drop-down-text {
+  display: none;
+  
+
+}
+.services-item h1{
+  margin-bottom: 0;
+}
+
+
+
+}
+@media screen and (max-width: 300px) {
+  .drop-down-text {
+    width: 90%;
   }
-  
-  /* grid bottom end */
-  
-  /* button */
-  .button-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-  }
-  
-  /* button */
+}

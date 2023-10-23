@@ -30,7 +30,7 @@
 
 .section-padding .section-borders span {
   height: 2px;
-  background: #E57373;
+  background: #E15A5A;
   width: 50px;
   display: inline-block;
 }
@@ -51,7 +51,7 @@
 }
 
 .section-padding .client-testimonial-carousel button.owl-dot.active {
-  background: #E57373;
+  background: #E15A5A;
   width: 30px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .section-padding .single-testimonial-item:hover {
-  box-shadow: 0 0 15px #E57373; /* soft rose shadow on hover */
+  box-shadow: 0 0 15px #E15A5A; /* soft rose shadow on hover */
   background-color: #2a2a2a;
 }
 
@@ -86,7 +86,7 @@
   left: 20px;
   top: 50%;
   font-size: 28px;
-  color: #E57373;
+  color: #E15A5A;
   line-height: 35px;
   margin-top: -17px;
 }
@@ -105,7 +105,7 @@
   font-size: 24px;
   font-style: normal;
   margin-bottom: 5px;
-  color: #E57373;
+  color: #E15A5A;
   font-family: 'Helvetica Neue', sans-serif;
 }
 

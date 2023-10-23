@@ -1,36 +1,11 @@
-// function ContactUsMail() {
-//     var params = {
-//       name: document.getElementById("name").value,
-//       email: document.getElementById("email").value,
-//       phone: document.getElementById("phone").value,
-//       message: document.getElementById("message").value,
-//     };
-  
-//     const serviceID = "service_bgbrhek";
-//     const templateID = "template_flos52b";
-  
-//       emailjs.send(serviceID, templateID, params)
-//       .then(res=>{
-//           document.getElementById("name").value = "";
-//           document.getElementById("email").value = "";
-//           document.getElementById("phone").value = "";
-//           document.getElementById("message").value = "";
-//           console.log(res);
-//           alert("Your message sent successfully!!")
-  
-//       })
-//       .catch(err=>console.log(err));
-  
-//   }
-
-
 function sendMail() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var phone = document.getElementById("phone").value;
   var message = document.getElementById("message").value;
+  var footerBtn = document.getElementById("footer-btn");
 
-  if (!name || !email || !phone || !message) {
+  if (!name || !email || !phone ) {
     alert("Please fill out all required fields.");
     return;
   }
@@ -57,10 +32,17 @@ function sendMail() {
       document.getElementById("phone").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("Your message sent successfully!!");
+      footerBtn.innerHTML = "<i class='fa-solid fa-check'></i>";
+      setTimeout(() => {
+        footerBtn.textContent = "Submit";
+      }, 3000);
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      console.log(err);
+      alert("Something went wrong. Please try again later.");
+    });
 }
+
 
 function validateEmail(email) {
   var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;

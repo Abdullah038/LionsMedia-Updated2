@@ -570,6 +570,9 @@ white-space: nowrap;
 transform: translateX(-40%) rotateY(0deg);
 /* Centering and hover rotation */
 }
+#arrowsup{
+  color: black !important;
+}
 
 .menu-item a {
 font-size: 0.8rem;

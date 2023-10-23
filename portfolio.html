@@ -93,9 +93,9 @@
   
           <a href="index.html">Home</a>
           <div class="dropdown">
-              <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down">⮟</span>
-                  <span class="arrow up" style="display:none;">⮝</span>
-              </a>
+            <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down"><i class="fa-solid fa-arrow-down arrows"></i></span>
+              <span class="arrow up"><i class="fa-solid fa-arrow-up arrows" id="arrowsup"></i></span>
+            </a>
               <div class="dropdown-content">
                   <a href="services.html#web-development">Web Development</a>
                   <a href="services.html#social-media">Social Media</a>
@@ -122,36 +122,37 @@
     <h1 id="title-top">Imagination. Turned. Reality.</h1>
 
     <!-- Filter Bar -->
-<div class="filter-bar">
-  <button class="filter-btn" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="website-design">Website Design</button>
-  <button class="filter-btn" data-filter="logos">Logos</button>
-  <button class="filter-btn" data-filter="cartoonify">Cartoonify</button>
-  <button class="filter-btn" data-filter="business-cards">Business Cards</button>
-</div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="website-design">Website Design</button>
+      <button class="filter-btn" data-filter="logos">Logos</button>
+      <button class="filter-btn" data-filter="cartoonify">Cartoonify</button>
+      <button class="filter-btn" data-filter="business-cards">Business Cards</button>
+    </div>
+    
 
     <div class="gallery">
-      <img src="portfolio-css/idriveWebsite.png" alt="Description 1" data-category="website-design">
-      <img src="images/1.png" alt="Description 2" data-category="cartoonify">
-      <img src="images/2.png" alt="Description 2" data-category="cartoonify">
-      <img src="images/3.png" alt="Description 2" data-category="cartoonify">
-      <img src="images/4.png" alt="Description 1" data-category="cartoonify">
-      <img src="images/5.png" alt="Description 2" data-category="cartoonify">
-      <img src="images/6.png" alt="Description 2" data-category="cartoonify">
-      <img src="images/7.png" alt="Description 1" data-category="cartoonify">
-      <img src="portfolio-css/event-logo.PNG" alt="Description 2" data-category="logos">
-      <img src="portfolio-css/paint-logo.png" alt="Description 2" data-category="logos">
-      <img src="portfolio-css/river-logo.png" alt="Description 1" data-category="logos">
-      <img src="portfolio-css/idrive-logo.PNG" alt="Description 2" data-category="logos">
-      <img src="portfolio-css/boutique-logo.PNG" alt="Description 2" data-category="logos">
-      <img src="portfolio-css/indo-pak-logo.jpg" alt="Description 1" data-category="logos">
-      <img src="portfolio-css/boutique.PNG" alt="Description 2" data-category="business-cards">
-      <img src="portfolio-css/event.JPG" alt="Description 1" data-category="business-cards">
-      <img src="portfolio-css/lions.jpg" alt="Description 2" data-category="business-cards">
       <img src="portfolio-css/paint.JPG" alt="Description 2" data-category="business-cards">
+      <img src="portfolio-css/idriveWebsite.png" alt="Description 1" data-category="website-design">
+      <img src="portfolio-css/river-logo.png" alt="Description 1" data-category="logos">
+      <img src="images/1.png" alt="Description 2" data-category="cartoonify">
+      <img src="portfolio-css/boutique.PNG" alt="Description 2" data-category="business-cards">
+      <img src="images/2.png" alt="Description 2" data-category="cartoonify">
+      <img src="portfolio-css/boutique-logo.PNG" alt="Description 2" data-category="logos">
+      <img src="images/3.png" alt="Description 2" data-category="cartoonify">
+      <img src="portfolio-css/idrive-logo.PNG" alt="Description 2" data-category="logos">
+      <img src="images/4.png" alt="Description 1" data-category="cartoonify">
       <img src="portfolio-css/sideWash.JPG" alt="Description 1" data-category="business-cards">
-      <img src="portfolio-css/sweets.PNG" alt="Description 2" data-category="business-cards">
+      <img src="images/5.png" alt="Description 2" data-category="cartoonify">
       <img src="portfolio-css/indo-pak.PNG" alt="Description 2" data-category="business-cards">
+      <img src="images/6.png" alt="Description 2" data-category="cartoonify">
+      <img src="portfolio-css/lions.jpg" alt="Description 2" data-category="business-cards">
+      <img src="portfolio-css/indo-pak-logo.jpg" alt="Description 1" data-category="logos">
+      <img src="images/7.png" alt="Description 1" data-category="cartoonify">
+      <img src="portfolio-css/paint-logo.png" alt="Description 2" data-category="logos">
+      <img src="portfolio-css/sweets.PNG" alt="Description 2" data-category="business-cards">
+      <img src="portfolio-css/event-logo.PNG" alt="Description 2" data-category="logos">
+      <img src="portfolio-css/event.JPG" alt="Description 1" data-category="business-cards">
 
   </div>
 
@@ -211,7 +212,7 @@
                     placeholder="How can we help you?"></textarea>
                 </div>
 
-                <button id="footer-btn" class="button-85" onclick="sendMail()">Contact an Expert</button>
+                <button id="footer-btn" class="button-85" onclick="sendMail()">Submit</button>
               
             </div>
           </div>

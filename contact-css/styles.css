@@ -290,7 +290,10 @@
   #tiktokLink:hover .fa-tiktok {
     color: black;
   }
-  
+  .row {
+    --bs-gutter-x: 0 !important;
+}
+
   @media (max-width: 768px){
     #socials ul li span{
       width: 70%;
@@ -562,7 +565,9 @@ ol.sub-menu a {
 #menu {
   display: none;
 }
-
+#arrowsup{
+  color: black !important;
+}
 .menu-icon .bar{
   background-color: white !important;
 }

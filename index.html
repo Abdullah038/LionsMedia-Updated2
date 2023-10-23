@@ -51,524 +51,527 @@
 </head>
 
 <body>
+  <div id="loadingScreen">
+    <h1 id="loading-h1">Lions Media</h1>
+    <img src="images/logo - Copy.PNG" alt="logo" class="loader">
+    <p id="loading-p">Loading...</p>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
 
-  <body>
-    <div id="loadingScreen">
-      <h1 id="loading-h1">Lions Media</h1>
-      <img src="images/logo - Copy.PNG" alt="logo" class="loader">
-      <p id="loading-p">Loading...</p>
+        <div class="align-items-center logo-container">
+          <a class="navbar-brand" href="index.html">
+            <div id="desktop-img"><img src="images/logo - Copy.PNG" alt="Lions Media Logo"
+                class="d-inline-block logo-spin" id="desktop-logo"><span id="navbar-brand-text">Lions
+                Media</span></div>
+            <div id="mobile-img"><img src="images/logo2.PNG" alt="Lions Media Logo"
+                class="d-inline-block logo-spin"><span id="navbar-brand-text">Lions
+                Media</span></div>
+          </a>
+        </div>
+        <div class=" d-flex align-items-center justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ol class="navbar-nav menu">
+              <li class="nav-item menu-item active">
+                <a class="nav-link" href="index.html"><span>Home</span></a>
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="services.html"><span>Services</span></a>
+
+                <ol class="sub-menu">
+                  <li class="dropdown-menu-item" id="top-dropdown"><a href="services.html#web-development">Web Dev</a>
+                  </li>
+                  <li class="dropdown-menu-item"><a href="services.html#social-media">Social Media</a></li>
+                  <li class="dropdown-menu-item"><a href="services.html#branding">Branding</a></li>
+                  <li class="dropdown-menu-item"><a href="services.html#content-creation">Content Creation</a></li>
+                </ol>
+
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="contact.html"><span>Contact</span></a>
+              </li>
+
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="portfolio.html"><span>Portfolio</span></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <section id="menu">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar" id="middle-bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="x-icon" onclick="toggleMenu()">
+          <div class="x-bar x-bar1"></div>
+          <div class="x-bar x-bar2"></div>
+        </div>
+
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down"><i
+                class="fa-solid fa-arrow-down arrows"></i></span>
+            <span class="arrow up"><i class="fa-solid fa-arrow-up arrows" id="arrowsup"></i></span>
+          </a>
+          <div class="dropdown-content">
+            <a href="services.html#web-development"><span class="sub-menu-text">Web Development</span></a>
+            <a href="services.html#social-media"><span class="sub-menu-text">Social Media</span></a>
+            <a href="services.html#branding"><span class="sub-menu-text">Branding</span></a>
+            <a href="services.html#content-creation"><span class="sub-menu-text">Content Creation</span></a>
+          </div>
+        </div>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </section>
+  </header>
+
+  <div id="heading-text" class="text-center">
+    <h4>Elevate your Digital Presence</h4>
+    <h1>Social Media and Digital Marketing Services</h1>
+
+    <a href="contact.html"><button id="button-85-heading" class="button-85">Connect Now</button></a>
+  </div>
+
+  <section id="carousel">
+    <div class="container">
+      <div class="carousel">
+        <ul class="carousel__list">
+          <li class="carousel__item" data-pos="-2">
+            <a href="contact.html"><img src="images/contact.png" alt="Contact"></a>
+          </li>
+          <li class="carousel__item" data-pos="-1">
+            <a href="portfolio.html"><img src="images/Design.png" alt="Design"></a>
+          </li>
+          <li class="carousel__item" data-pos="0">
+            <a href="services.html#web-development"><img src="images/need_website.png" alt="Need a website"></a>
+          </li>
+          <li class="carousel__item" data-pos="1">
+            <a href="services.html#content-creation"></a><img src="images/content_creation.png"
+              alt="Content Creation"></a>
+          </li>
+          <li class="carousel__item" data-pos="2">
+            <a href="services.html#social-media"><img src="images/manage.png" alt="Manage"></a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+  </section>
 
-          <div class="align-items-center logo-container">
-            <a class="navbar-brand" href="index.html">
-              <div id="desktop-img"><img src="images/logo - Copy.PNG" alt="Lions Media Logo"
-                  class="d-inline-block logo-spin" id="desktop-logo"><span id="navbar-brand-text">Lions
-                  Media</span></div>
-              <div id="mobile-img"><img src="images/logo2.PNG" alt="Lions Media Logo"
-                  class="d-inline-block logo-spin"><span id="navbar-brand-text">Lions
-                  Media</span></div>
+  <section id="slidingSides">
+    <div id="scrollSection">
+      <div id="scrollingArea1">
+        <div class="scrollBox">
+          <ul class="scrollItems">
+            <a href="services.html#web-development">
+              <li><img src="images/final-web-side.png" alt=""></li>
             </a>
-          </div>
-          <div class=" d-flex align-items-center justify-content-end">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ol class="navbar-nav menu">
-                <li class="nav-item menu-item active">
-                  <a class="nav-link" href="index.html"><span>Home</span></a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="services.html"><span>Services</span></a>
-
-                  <ol class="sub-menu">
-                    <li class="dropdown-menu-item" id="top-dropdown"><a href="services.html#web-development">Web Dev</a>
-                    </li>
-                    <li class="dropdown-menu-item"><a href="services.html#social-media">Social Media</a></li>
-                    <li class="dropdown-menu-item"><a href="services.html#branding">Branding</a></li>
-                    <li class="dropdown-menu-item"><a href="services.html#content-creation">Content Creation</a></li>
-                  </ol>
-
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="contact.html"><span>Contact</span></a>
-                </li>
-
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="portfolio.html"><span>Portfolio</span></a>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-        </div>
-      </nav>
-      <section id="menu">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div class="bars">
-            <div class="bar"></div>
-            <div class="bar" id="middle-bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-
-        <div class="mobile-menu">
-          <div class="x-icon" onclick="toggleMenu()">
-            <div class="x-bar x-bar1"></div>
-            <div class="x-bar x-bar2"></div>
-          </div>
-
-          <a href="index.html">Home</a>
-          <div class="dropdown">
-            <a href="javascript:void(0);" onclick="toggleDropdown()">Services <span class="arrow down"><i class="fa-solid fa-arrow-down" style="color: #000000;"></i></span>
-              <span class="arrow up" style="display:none;"><i class="fa-solid fa-arrow-up" style="color: #000000;"></i></span>
+            <a href="portfolio.html">
+              <li><img src="images/final-side-design.png" alt=""></li>
             </a>
-            <div class="dropdown-content">
-              <a href="services.html#web-development"><span class="sub-menu-text">Web Development</span></a>
-              <a href="services.html#social-media"><span class="sub-menu-text">Social Media</span></a>
-              <a href="services.html#branding"><span class="sub-menu-text">Branding</span></a>
-              <a href="services.html#content-creation"><span class="sub-menu-text">Content Creation</span></a>
-            </div>
-          </div>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </section>
-
-
-    </header>
-
-    <div id="heading-text" class="text-center">
-      <h4>Elevate your Digital Presence</h4>
-      <h1>Social Media and Digital Marketing Services</h1>
-
-      <a href="contact.html"><button id="button-85-heading" class="button-85">Contact an Expert</button></a>
-    </div>
-
-    <section id="carousel">
-      <div class="container">
-        <div class="carousel">
-          <ul class="carousel__list">
-            <li class="carousel__item" data-pos="-2">
-              <a href="contact.html"><img src="images/contact.png" alt="Contact"></a>
-            </li>
-            <li class="carousel__item" data-pos="-1">
-              <a href="portfolio.html"><img src="images/Design.png" alt="Design"></a>
-            </li>
-            <li class="carousel__item" data-pos="0">
-              <a href="services.html#web-development"><img src="images/need_website.png" alt="Need a website"></a>
-            </li>
-            <li class="carousel__item" data-pos="1">
-              <a href="services.html#content-creation"></a><img src="images/content_creation.png"
-                alt="Content Creation"></a>
-            </li>
-            <li class="carousel__item" data-pos="2">
-              <a href="services.html#social-media"><img src="images/manage.png" alt="Manage"></a>
-            </li>
+            <a href="contact.html">
+              <li><img src="images/final-contact-side.png" alt=""></li>
+            </a>
           </ul>
         </div>
       </div>
-    </section>
 
-    <section id="slidingSides">
-      <div id="scrollSection">
-        <div id="scrollingArea1">
-          <div class="scrollBox">
-            <ul class="scrollItems">
-              <a href="services.html#web-development">
-                <li><img src="images/final-web-side.png" alt=""></li>
-              </a>
-              <a href="portfolio.html">
-                <li><img src="images/final-side-design.png" alt=""></li>
-              </a>
-              <a href="contact.html">
-                <li><img src="images/final-contact-side.png" alt=""></li>
-              </a>
-            </ul>
-          </div>
-        </div>
-
-        <div id="scrollingArea2">
-          <div class="scrollBox">
-            <ul class="scrollItems">
-              <a href="services.html#content-creation">
-                <li><img src="images/final-content-side.png" alt="need_website"></li>
-              </a>
-              <a href="services.html#social-media">
-                <li><img src="images/final-manage-side.png" alt=""></li>
-              </a>
-              <a href="services.html#web-development">
-                <li><img src="images/404.png" alt=""></li>
-              </a>
-            </ul>
-          </div>
+      <div id="scrollingArea2">
+        <div class="scrollBox">
+          <ul class="scrollItems">
+            <a href="services.html#content-creation">
+              <li><img src="images/final-content-side.png" alt="need_website"></li>
+            </a>
+            <a href="services.html#social-media">
+              <li><img src="images/final-manage-side.png" alt=""></li>
+            </a>
+            <a href="services.html#web-development">
+              <li><img src="images/404.png" alt=""></li>
+            </a>
+          </ul>
         </div>
       </div>
-      <div id="video-section">
-        <div class="video-container">
-          <video controls poster="images/404.png">
-            <source src="images/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+    </div>
+    <div id="video-section">
+      <div class="video-container">
+        <video controls poster="images/thumbnail.PNG">
+          <source src="images/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="blackback">
+
+    <section id="full-aboutUs">
+      <div class="container">
+        <div id="aboutUs" class="container">
+          <h1 class="centered-heading">
+            "Our <span class="highlight">Journey</span> and <span class="highlight">Vision</span>"
+          </h1>
+
+          <p class="centered-paragraph" id="journey-paragraph">
+            Committed to excellence in <span class="highlight">design</span> and <span
+              class="highlight">storytelling</span>, we transform how brands connect with audiences through <span
+              class="highlight">digital narratives</span>. Our <span class="highlight">data-driven</span> approach,
+            combined with strategic <span class="highlight">SEO</span> and <span class="highlight">social media
+              marketing</span>, ensures measurable <span class="highlight">success</span> and significant brand
+            elevation.
+          </p>
+
+          <a href="services.html"><button id="aboutUs-button" class="button-85">More info</button></a>
         </div>
       </div>
-      
-
     </section>
 
-    <section id="blackback">
-
-      <section id="full-aboutUs">
-        <div class="container">
-          <div id="aboutUs" class="container">
-            <h1 class="centered-heading">
-              "Our <span class="highlight">Journey</span> and <span class="highlight">Vision</span>"
-            </h1>
-
-            <p class="centered-paragraph" id="journey-paragraph">
-              Committed to excellence in <span class="highlight">design</span> and <span
-                class="highlight">storytelling</span>, we transform how brands connect with audiences through <span
-                class="highlight">digital narratives</span>. Our <span class="highlight">data-driven</span> approach,
-              combined with strategic <span class="highlight">SEO</span> and <span class="highlight">social media
-                marketing</span>, ensures measurable <span class="highlight">success</span> and significant brand
-              elevation.
-            </p>
-
-            <a href="services.html"><button id="aboutUs-button" class="button-85">More info</button></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="whyUs" class="container">
-        <div id="whyUs-grid-container">
-          <div class="whyUs-grid-item-side" id="bigBox">
-            <h1>"Our Unique Proposition"</h1>
-            <ul>
-              <li>🚀 Creative Pioneers: We're driven by creativity and design excellence. </li>
-              <li>💡 Authentic Engagement: We build genuine connections with your audience.</li>
-              <li>📈 Results-Driven: Our strategies deliver measurable success.
-              </li>
-              <li>✨ Innovative Outlook: We stay ahead with the latest trends and tech.
-              </li>
-              <li> 👥 Your Success Matters: We're committed to your brand's growth.
-              </li>
-              <li>🤝 Collaborative Approach: We're your creative allies in every project.
-              </li>
-              <li>🌐 Global Reach, Local Impact: We blend global perspectives with local relevance.
-              </li>
-            </ul>
-            <a href="contact.html"><button id="whyUs-button" class="button-85">Book Now</button></a>
-          </div>
-
-          <div class="whyUs-grid-item" id="box1">
-            <img src="images/logo-whyus.PNG" alt="">
-          </div>
-          <div class="whyUs-grid-item" id="box2"><img src="images/website-whyus.png" alt=""></div>
-          <div class="whyUs-grid-item" id="box3"><img src="images/design-whyus.png" alt=""></div>
-          <div class="whyUs-grid-item" id="box4"><img src="images/success-whyus.png" alt=""></div>
-        </div>
-      </section>
-
-      <section id="services">
-        <div id="comparison-slider">
-          <figure class="cd-image-container">
-            <img src="images/slider-purple.png" alt="Original Image">
-            <span class="cd-image-label" data-type="original"></span>
-
-            <div class="cd-resize-img">
-              <img src="images/slider-yellow.png" alt="Modified Image">
-              <span class="cd-image-label" data-type="modified"></span>
-            </div>
-
-            <span class="cd-handle"></span>
-          </figure>
-
+    <section id="whyUs" class="container">
+      <div id="whyUs-grid-container">
+        <div class="whyUs-grid-item-side" id="bigBox">
+          <h1>"Our Unique Proposition"</h1>
+          <ul>
+            <li>🚀 Creative Pioneers: We're driven by creativity and design excellence. </li>
+            <li>💡 Authentic Engagement: We build genuine connections with your audience.</li>
+            <li>📈 Results-Driven: Our strategies deliver measurable success.
+            </li>
+            <li>✨ Innovative Outlook: We stay ahead with the latest trends and tech.
+            </li>
+            <li> 👥 Your Success Matters: We're committed to your brand's growth.
+            </li>
+            <li>🤝 Collaborative Approach: We're your creative allies in every project.
+            </li>
+            <li>🌐 Global Reach, Local Impact: We blend global perspectives with local relevance.
+            </li>
+          </ul>
+          <a href="contact.html"><button id="whyUs-button" class="button-85">Book Now</button></a>
         </div>
 
+        <div class="whyUs-grid-item" id="box1">
+          <img src="images/logo-whyus.PNG" alt="">
+        </div>
+        <div class="whyUs-grid-item" id="box2"><img src="images/website-whyus.png" alt=""></div>
+        <div class="whyUs-grid-item" id="box3"><img src="images/design-whyus.png" alt=""></div>
+        <div class="whyUs-grid-item" id="box4"><img src="images/success-whyus.png" alt=""></div>
+      </div>
+    </section>
+
+    <section id="services">
+
+      <div id="services">
+        <h1 class="packages-heading">Select Your Package</h1>
         <div class="services-grid">
           <div id="services-item1" class="services-item">
-            <h1>Foundations</h1>
-            <p>"Building Your Digital Success from the Ground Up with Our Foundations Plan"</p>
+            <h1 class="drop-down-heading">Foundation</h1>
+            <div class="drop-down-text">
+              <p>Establish a strong online foundation with our Basic Plan. We offer essential services tailored to
+                jumpstart your digital journey and ensure your success.</p>
+              <ul>
+                <li>Creative Content Creation</li>
+                <li>Proactive Social Media Management</li>
+                <li>Detailed Analytics & Reporting</li>
+              </ul>
+            </div>
           </div>
           <div id="services-item2" class="services-item">
-            <h1>Enhanced</h1>
-            <p>"Elevate Your Strategy with Our Enhanced Package: The Power of Premium Services"</p>
+            <h1 class="drop-down-heading">Enhanced</h1>
+            <div class="drop-down-text">
+              <p>Elevate your digital strategy with our Premium Package. This comprehensive suite provides a holistic
+                approach to online presence, delivering premium services that cater to your unique needs.</p>
+              <ul>
+                <li>Innovative Content Creation</li>
+                <li>Strategic Social Media Management</li>
+                <li>Insightful Audience Analysis</li>
+                <li>Effective Campaign Development</li>
+                <li>Responsive Web Creation</li>
+              </ul>
+            </div>
           </div>
           <div id="services-item3" class="services-item">
-            <h1>Ultimate</h1>
-            <p>"Unlock Unparalleled Success with Our Ultimate Package: Where Excellence Knows No Limits"</p>
+            <h1 class="drop-down-heading">Ultimate</h1>
+            <div class="drop-down-text">
+              <p>Maximize your brand's potential with our Elite Package, offering a range of top-tier services for
+                unparalleled success.</p>
+              <ul>
+                <li>Premium Content Creation</li>
+                <li>Dedicated Social Media</li>
+                <li>Targeted Audience Analysis</li>
+                <li>Innovative Campaigns</li>
+                <li>Efficient Web Management</li>
+                <li>Professional Web Design</li>
+                <li>Influencer Collaborations</li>
+                <li>Strategic Consulting</li>
+              </ul>
+            </div>
+
           </div>
         </div>
         <div class="button-container">
-          <a href="services.html">
-            <button id="services-btn" class="button-85">More info</button></a>
+          <a href="services.html" id="services-btn-a">
+            <button id="services-btn" class="button-85">Discover More</button>
+          </a>
         </div>
+      </div>
+    </section>
 
-      </section>
-
-      <section id="testimonials">
-
-        <div class="section-padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="owl-carousel client-testimonial-carousel">
-                  <div class="single-testimonial-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
-                    <h3>Jane Doe <span>Land Broker</span></h3>
-                  </div>
-                  <div class="single-testimonial-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
-                    <h3>Jane Doe <span>Land Broker</span></h3>
-                  </div>
-                  <div class="single-testimonial-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
-                    <h3>Jane Doe <span>Land Broker</span></h3>
-                  </div>
-                  <div class="single-testimonial-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
-                    <h3>Jane Doe <span>Land Broker</span></h3>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="unmatched">
-        <div class="excellence">
-          <h1><span class="highlight">Unmatched Excellence</span>: Why Our <span class="highlight">Results</span> Reign Supreme in <span class="highlight">Digital Marketing</span></h1>
-          <p class="expandable-content">We surpass competitors with our <span class="highlight">innovative
-              strategies</span> and proven success in driving <span class="highlight">tangible results</span> for
-            businesses. Our commitment to grasping your <span class="highlight">unique needs</span>, coupled with our
-            utilization of <span class="highlight">cutting-edge tools</span>, guarantees your brand's triumph in the
-            <span class="highlight">digital landscape</span>.
-          </p>
-          <div class="button-container">
-            <a href="portfolio.html"><button id="services-btn" class="button-85">Projects</button></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery">
-        <img src="images/1.png" alt="Description 1" class="gallery-image left-image">
-        <img src="images/2.png" alt="Description 2" class="gallery-image right-image">
-        <img src="images/3.png" alt="Description 1" class="gallery-image left-image">
-        <img src="images/4.png" alt="Description 2" class="gallery-image right-image">
-        <img src="images/5.png" alt="Description 1" class="gallery-image left-image">
-        <img src="images/6.png" alt="Description 2" class="gallery-image right-image">
-        <img src="images/7.png" alt="Description 1" class="gallery-image left-image">
-        <img src="images/4.png" alt="Description 2" class="gallery-image right-image">
-      </section>
-
-      <footer class="footer-section">
+    <section id="testimonials">
+      <div class="section-padding">
         <div class="container">
-
-          <section id="socials">
-            <div id="socials-div">
-              <ul>
-                <li>
-                  <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/official.lionsmedia/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
-                    <span></span>
-                    <span></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" id="tiktokLink">
-                    <span></span>
-                    <span></span>
-                    <span><i class="fa-brands fa-tiktok"></i></span>
-                  </a>
-                </li>
-              </ul>
+          <div class="row">
+            <div class="col-md-12">
             </div>
-          </section>
-
-          <div class="footer-content pt-4 pb-2">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div class="footer-widget footer-form">
-                  <div class="footer-widget-heading">
-                    <h3>Get in Touch!</h3>
-                  </div>
-
-                  <div class="form-group icon-input">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required />
-                  </div>
-
-                  <div class="form-group icon-input">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required/>
-                  </div>
-
-                  <div class="form-group icon-input">
-                    <i id="message-icon" class="fa-solid fa-comment-dots"></i>
-                    <textarea class="form-control" id="message" rows="3" placeholder="How can we help you?" required></textarea>
-                  </div>
-
-                  <button id="footer-btn" class="button-85" onclick="sendMail()">Contact an Expert</button>
-                
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel client-testimonial-carousel">
+                <div class="single-testimonial-item">
+                  <p>"Lions Media delivered a stunning logo and website that elevated my limo business. Their work
+                    boosted our bookings and online presence. Highly recommend!"</p>
+                  <h3>Ibrhim Sheikh <span>IDrive Limo</span></h3>
                 </div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 mb-50 footer-mobile">
-                <div class="footer-widget">
-                  <div class="footer-logo">
-                    <a href="index.html"><img src="images/logo.PNG" class="img-fluid" alt="logo"></a>
-                  </div>
+                <div class="single-testimonial-item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                  <h3>Jane Doe <span>Land Broker</span></h3>
                 </div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50 footer-mobile">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <div class="single-cta" id="projects-footer">
-                      <h3>Projects</h3>
-                    </div>
-                  </div>
-
-                  <div class="instagram-gallery">
-                    <div class="ig-row">
-                      <a href="portfolio.html">
-                        <img src="portfolio-css/idrive-logo.PNG" alt="Instagram Image 1">
-                      </a>
-                      <a href="portfolio.html">
-                        <img src="portfolio-css/boutique.PNG" alt="Instagram Image 2">
-                      </a>
-                    </div>
-                    <div class="ig-row">
-                      <a href="portfolio.html">
-                        <img src="portfolio-css/indo-pak.PNG" alt="Instagram Image 3">
-                      </a>
-                      <a href="portfolio.html">
-                        <img src="portfolio-css/paint.JPG" alt="Instagram Image 4">
-                      </a>
-                    </div>
-                  </div>
-
-
+                <div class="single-testimonial-item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                  <h3>Jane Doe <span>Land Broker</span></h3>
+                </div>
+                <div class="single-testimonial-item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                  <h3>Jane Doe <span>Land Broker</span></h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <section id="contact-info" class="container">
-          <div class="footer-cta">
-            <div class="row">
-              <div class="col-xl col-md mb-30">
-                <a class="contacts" href="tel:+">
-                  <div id="call-us" class="single-cta">
-                    <i class="fas fa-phone"></i>
-                    <div class="cta-text">
-                      <h4>Call us</h4>
-                      <span class="contact-text">9876543210 0</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-xl col-md mb-30">
-                <a class="contacts" href="mailto:lions.media@hotmail.com">
-                  <div class="single-cta">
-                    <i class="far fa-envelope-open"></i>
-                    <div class="cta-text">
-                      <h4>Mail us</h4>
-                      <span class="contact-text">lions.media@hotmail.com</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+      </div>
+    </section>
 
-        <section id="softwareScrolling">
-          <div class="marquee">
-            <ul class="marquee-content">
-              <li><i class="fab fa-html5"></i></li> <!-- HTML5 -->
-              <li><i class="fab fa-css3-alt"></i></li> <!-- CSS3 -->
-              <li><i class="fab fa-js-square"></i></li> <!-- JavaScript -->
-              <li><i class="fab fa-sass"></i></li> <!-- Sass -->
-              <li><i class="fab fa-react"></i></li> <!-- ReactJS -->
-              <li><i class="fab fa-vuejs"></i></li> <!-- VueJS -->
-              <li><i class="fab fa-angular"></i></li> <!-- AngularJS -->
-              <li><i class="fab fa-node-js"></i></li> <!-- NodeJS -->
-              <li><i class="fab fa-wordpress"></i></li> <!-- WordPress -->
+    <section id="unmatched">
+      <div class="excellence">
+        <h1><span class="highlight">Unmatched Excellence</span>: Why Our <span class="highlight">Results</span> Reign
+          Supreme in <span class="highlight">Digital Marketing</span></h1>
+        <p class="expandable-content">We surpass competitors with our <span class="highlight">innovative
+            strategies</span> and proven success in driving <span class="highlight">tangible results</span> for
+          businesses. Our commitment to grasping your <span class="highlight">unique needs</span>, coupled with our
+          utilization of <span class="highlight">cutting-edge tools</span>, guarantees your brand's triumph in the
+          <span class="highlight">digital landscape</span>.
+        </p>
+        <div class="button-container">
+          <a href="portfolio.html"><button id="services-btn" class="button-85">Projects</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <img src="images/1.png" alt="Description 1" class="gallery-image left-image">
+      <img src="images/2.png" alt="Description 2" class="gallery-image right-image">
+      <img src="images/3.png" alt="Description 1" class="gallery-image left-image">
+      <img src="images/4.png" alt="Description 2" class="gallery-image right-image">
+      <img src="images/5.png" alt="Description 1" class="gallery-image left-image">
+      <img src="images/6.png" alt="Description 2" class="gallery-image right-image">
+      <img src="images/7.png" alt="Description 1" class="gallery-image left-image">
+      <img src="images/4.png" alt="Description 2" class="gallery-image right-image">
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+
+        <section id="socials">
+          <div id="socials-div">
+            <ul>
+              <li>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-facebook-f"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/official.lionsmedia/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="tiktokLink">
+                  <span></span>
+                  <span></span>
+                  <span><i class="fa-brands fa-tiktok"></i></span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
 
-        <div class="copyright-area">
-          <div class="copyright-area">
-            <div class="container">
-              <div class="row align-items-center"> <!-- Retained the alignment -->
-                <div class="col-12 text-center"> <!-- Change the column class to span the whole width -->
-                  <div class="copyright-text">
-                    <div class="copyright-section">
-                      <p>
-                        <span class="copyright-symbol">&copy;</span>
-                        <span class="year">2023</span>
-                        <span class="separator">|</span>
-                        <span class="brand-name"><a href="index.html" target="_blank" rel="noopener noreferrer">Lions
-                            Media</a></span>
-                        <span class="rights-reserved">All Rights Reserved.</span>
-                        <span class="additional-links"><a href="terms.html" target="_blank">Terms & Conditions</a>
-                        </span>
-                      </p>
-                    </div>
+        <div class="footer-content pt-4 pb-2">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget footer-form">
+                <div class="footer-widget-heading">
+                  <h3>Get in Touch!</h3>
+                </div>
+
+                <div class="form-group icon-input">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" class="form-control" id="name" placeholder="Name" required />
+                </div>
+
+                <div class="form-group icon-input">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required />
+                </div>
+                <div class="form-group icon-input">
+                  <i id="message-icon" class="fa-solid fa-comment-dots"></i>
+                  <textarea class="form-control" id="message" rows="3" placeholder="How can we help you?"
+                    required></textarea>
+                </div>
+                <button id="footer-btn" class="button-85" onclick="sendMail()">Submit</button>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 mb-50 footer-mobile">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="images/logo.PNG" class="img-fluid" alt="logo"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50 footer-mobile">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <div class="single-cta" id="projects-footer">
+                    <h3>Projects</h3>
+                  </div>
+                </div>
+                <div class="instagram-gallery">
+                  <div class="ig-row">
+                    <a href="portfolio.html">
+                      <img src="portfolio-css/idrive-logo.PNG" alt="Instagram Image 1">
+                    </a>
+                    <a href="portfolio.html">
+                      <img src="portfolio-css/boutique.PNG" alt="Instagram Image 2">
+                    </a>
+                  </div>
+                  <div class="ig-row">
+                    <a href="portfolio.html">
+                      <img src="portfolio-css/indo-pak.PNG" alt="Instagram Image 3">
+                    </a>
+                    <a href="portfolio.html">
+                      <img src="portfolio-css/paint.JPG" alt="Instagram Image 4">
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      </footer>
-    </section>
+        </div>
+      </div>
+      <section id="contact-info" class="container">
+        <div class="footer-cta">
+          <div class="row">
+            <div class="col-xl col-md mb-30">
+              <a class="contacts" href="tel:+">
+                <div id="call-us" class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span class="contact-text">9876543210 0</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl col-md mb-30">
+              <a class="contacts" href="mailto:lions.media@hotmail.com">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span class="contact-text">lions.media@hotmail.com</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"></script>
-    <script src="script/carousel.js"></script>
-    <script src="script/tilt.js"></script>
-    <script src="script/menu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="script/testimonials.js"></script>
-    <script src="script/softwareScrolling.js"></script>
-    <script src="script/serviecs.js"></script>
-    <script src="script/gallery.js"></script>
-    <script src="script/side-slide.js"></script>
-    <script src="script/comparisonSlider.js"></script>
-    <script src="script/script.js"></script>
+      <section id="softwareScrolling">
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fab fa-html5"></i></li> <!-- HTML5 -->
+            <li><i class="fab fa-css3-alt"></i></li> <!-- CSS3 -->
+            <li><i class="fab fa-js-square"></i></li> <!-- JavaScript -->
+            <li><i class="fab fa-sass"></i></li> <!-- Sass -->
+            <li><i class="fab fa-react"></i></li> <!-- ReactJS -->
+            <li><i class="fab fa-vuejs"></i></li> <!-- VueJS -->
+            <li><i class="fab fa-angular"></i></li> <!-- AngularJS -->
+            <li><i class="fab fa-node-js"></i></li> <!-- NodeJS -->
+            <li><i class="fab fa-wordpress"></i></li> <!-- WordPress -->
+          </ul>
+        </div>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <div class="copyright-area">
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row align-items-center"> <!-- Retained the alignment -->
+              <div class="col-12 text-center"> <!-- Change the column class to span the whole width -->
+                <div class="copyright-text">
+                  <div class="copyright-section">
+                    <p>
+                      <span class="copyright-symbol">&copy;</span>
+                      <span class="year">2023</span>
+                      <span class="separator">|</span>
+                      <span class="brand-name"><a href="index.html" target="_blank" rel="noopener noreferrer">Lions
+                          Media</a></span>
+                      <span class="rights-reserved">All Rights Reserved.</span>
+                      <span class="additional-links"><a href="terms.html" target="_blank">Terms & Conditions</a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </section>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="script/carousel.js"></script>
+  <script src="script/tilt.js"></script>
+  <script src="script/menu.js"></script>
+  <script src="script/testimonials.js"></script>
+  <script src="script/softwareScrolling.js"></script>
+  <script src="script/serviecs.js"></script>
+  <script src="script/gallery.js"></script>
+  <script src="script/side-slide.js"></script>
+  <script src="script/comparisonSlider.js"></script>
+  <script src="script/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  </body>
+</body>
 
 </html>

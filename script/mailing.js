@@ -2,35 +2,41 @@ function sendMail() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
+  var footerBtn = document.getElementById("footer-btn");
 
-  if (!name || !email || !message) {
-    alert("Please fill out all required fields.");
-    return;
+  if (!name || !email) {
+      alert("Please fill out all required fields.");
+      return;
   }
 
   if (!validateEmail(email)) {
-    alert("Please enter a valid email address.");
-    return;
+      alert("Please enter a valid email address.");
+      return;
   }
 
   var params = {
-    name: name,
-    email: email,
-    message: message,
+      name: name,
+      email: email,
+      message: message,
   };
 
   const serviceID = "service_tc05l4o";
   const templateID = "template_8yrreye";
 
   emailjs.send(serviceID, templateID, params)
-    .then(res => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("Thank you for reaching out to Lions Media! We'll get back to you shortly. We appreciate your patience.");
-    })
-    .catch(err => console.log(err));
+      .then(res => {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          footerBtn.innerHTML = "<i class='fa-solid fa-check'></i>";
+          setTimeout(() => {
+              footerBtn.textContent = "Submit";
+          }, 3000);
+      })
+      .catch(err => {
+          console.log(err);
+          alert("Something went wrong. Please try again later.");
+      });
 }
 
 function validateEmail(email) {

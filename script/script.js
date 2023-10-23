@@ -35,11 +35,11 @@ document.addEventListener('scroll', function() {
         updateBarColorBasedOnScroll();
     }
 });
-
 function updateBarColorBasedOnScroll() {
     const header = document.querySelector('header');
     const navbarBrand = document.querySelector('.navbar .navbar-brand');
     const navLinks = document.querySelectorAll('.navbar .nav-link');
+    const dropdownMenuItems = document.querySelectorAll('.navbar .dropdown-menu-item a'); // select dropdown menu items
     const inlineBlocks = document.querySelectorAll('.d-inline-block');
     const aboutUsSection = document.getElementById('full-aboutUs');
     const servicesSection = document.getElementById('services');
@@ -57,6 +57,7 @@ function updateBarColorBasedOnScroll() {
     function setTextColor(color) {
         navbarBrand.setAttribute('style', `color: ${color} !important`);
         navLinks.forEach(link => link.setAttribute('style', `color: ${color} !important`));
+        dropdownMenuItems.forEach(item => item.style.color = color); // change color of dropdown menu items
     }
 
     if (window.scrollY < aboutUsPosition) {
